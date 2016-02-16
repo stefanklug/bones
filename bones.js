@@ -5,7 +5,7 @@ if (global.__BonesPlugin__) {
 
 var path = require('path');
 
-exports.$ = require('jquery');
+exports.$ = require('jquery')(require("jsdom").jsdom().parentWindow);
 exports._ = require('underscore');
 exports.mirror = require('mirror');
 
